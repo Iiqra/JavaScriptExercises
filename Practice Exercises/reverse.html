@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		JavaScript |
+	Reverse a string in place.
+	</title>
+</head>
+
+<body style="text-align:center;" id="body">
+	<h1 style="color:green;">
+			GeeksForGeeks
+		</h1>
+	<p id="GFG_UP"
+	style="font-size: 16px; font-weight: bold;">
+	</p>
+	<button onclick="gfg_Run()">
+		Inplace Reverse
+	</button>
+	<p id="GFG_DOWN"
+	style="color:green;
+			font-size: 20px;
+			font-weight: bold;">
+	</p>
+	<script>
+		var el_up = document.getElementById("GFG_UP");
+		var el_down = document.getElementById("GFG_DOWN");
+		var str = 'This is GeeksForGeeks';
+		el_up.innerHTML = "String = " + "'" + str + "'";
+
+		function gfg_Run() {
+			el_down.innerHTML = str.split("").reverse().join("");
+		}
+	</script>
+</body>
+
+</html>
